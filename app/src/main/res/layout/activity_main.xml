@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rsc.annaparrish.todolist.MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="To do list"
+        android:inputType="text"
+        android:textColor="@color/colorAccent" />
+
+  <!--
+    <EditText
+        android:id="@+id/priority"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Priority 1, 2, 3 (Default is 1)"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent" />
+    -->
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/userInput"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="129dp"
+        android:onClick="addButtonClicked"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="deleteButtonClicked"
+        android:text="DELETE" />
+
+
+    <!--
+    <Button
+        android:id="@+id/dropButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteButton"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:onClick="dropButtonClicked"
+        android:clickable="true"
+        android:text="DROP" />
+        -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/recordsTextView"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
